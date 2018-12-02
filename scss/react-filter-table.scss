@@ -1,0 +1,101 @@
+.FilterTable {
+    .search-actions {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .search {
+        box-shadow: 0 2px 4px 0 rgba(50, 50, 93, 0.1);
+        border-left: 1px solid rgba(0, 0, 0, 0.05);
+        border-right: 1px solid rgba(0, 0, 0, 0.05);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        overflow-x: auto;
+    }
+
+    .clear-button {
+        width: 110px;
+        margin: 0 0 0 5px !important;
+    }
+
+    .search-header {
+        display: flex;
+
+        .search-cell {
+            display: flex;
+            min-width: 200px;
+            padding: 3px 1px;
+            max-width: 100%;
+            margin-bottom: auto;
+            text-align: center;
+            color: #fff;
+            background-color: #6198b6;
+
+            .sorter {
+                flex-basis: 91.66666666%;
+                max-width: 91.66666666%;
+
+                .sort-key {
+                    margin-left: 8.33333333%;
+                }
+            }
+
+            .sorter:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+            .filter {
+                flex-basis: 8.33333333%;
+                max-width: 8.33333333%;
+                cursor: pointer;
+            }
+        }
+
+        .search-cell:hover {
+            background-color: #83c8ee;
+        }
+    }
+
+    .search-body {
+        .search-row {
+            display: flex;
+
+            .search-cell {
+                flex-grow: 1;
+                -webkit-box-flex: 1;
+                min-width: 200px;
+                padding: 3px 1px;
+                flex-basis: 0;
+                max-width: 100%;
+                margin-bottom: auto;
+                text-align: center;
+            }
+        }
+    }
+
+    .search-filters {
+        .filter-block {
+            display: flex;
+
+            > input {
+                flex-basis: 8.33333333%;
+                max-width: 8.33333333%;
+            }
+
+            > span {
+                flex-basis: 8.33333333%;
+                max-width: 8.33333333%;
+                width: 100%;
+                padding-left: 5px;
+                line-height: 19px;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            > label {
+                flex-basis: 91.66666666%;
+                max-width: 91.66666666%;
+            }
+        }
+    }
+}
