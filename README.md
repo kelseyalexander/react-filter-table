@@ -1,4 +1,4 @@
-# React Filter Table
+# react-filter-table
 A table component for ReactJS with keyword matching, sorting, and filtering. Uses a modal for filtering on specific columns.
 
 - [Properties](#properties)
